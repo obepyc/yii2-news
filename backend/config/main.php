@@ -12,6 +12,7 @@ return [
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log'],
     'modules' => [],
+    'defaultRoute' => 'post/index',
     'components' => [
         'request' => [
             'baseUrl' => '/adminpanel',
