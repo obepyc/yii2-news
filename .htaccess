@@ -15,3 +15,5 @@
   # Перенаправляем все запросы на входной скрипт
   RewriteRule ^([^/].*)?$ /frontend/web/$1
 </IfModule>
+
+php_value date.timezone "Europe/Kiev"

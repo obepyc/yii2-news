@@ -32,8 +32,14 @@ $this->params['breadcrumbs'][] = $this->title;
             'title',
             'sText:ntext',
             'text:ntext',
-            'created_at',
-            'updated_at',
+            [
+                'label' => 'Добавлена',
+                'value' => date('Y-m-d H:i:s',$model->created_at)
+            ],
+                        [
+                'label' => 'Обновлена',
+                'value' => date('Y-m-d H:i:s',$model->updated_at)
+            ],
         ],
     ]) ?>
 

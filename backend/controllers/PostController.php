@@ -20,6 +20,7 @@ use yii\web\Response;
  */
 class PostController extends Controller
 {
+
     public function behaviors()
     {
         return [
