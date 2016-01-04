@@ -19,8 +19,8 @@ class m160102_161106_create_table_post extends Migration
             'title'      => $this->string()->notNull(),
             'sText'      => $this->text(),
             'text'       => $this->text(),
-            'created_at' => Schema::TYPE_INTEGER . ' NOT NULL',
-            'updated_at' => Schema::TYPE_INTEGER . ' NOT NULL',
+            'created_at' => $this->integer()->notNull(),
+            'updated_at' => $this->integer()->notNull(),
         ], $tableOptions);
 
         $this->createIndex('FK_post_category', '{{%post}}', 'catId');

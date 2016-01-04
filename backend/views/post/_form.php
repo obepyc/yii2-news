@@ -32,6 +32,7 @@ use yii\helpers\ArrayHelper;
     'editorOptions' => [
         'preset' => 'basic', //разработанны стандартные настройки basic, standard, full данную возможность не обязательно использовать
         'inline' => false, //по умолчанию false
+        'height' => '450px'
     ],
     ]);?>
 

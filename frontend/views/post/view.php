@@ -19,7 +19,7 @@ $this->params['breadcrumbs'][] = $this->title;
 <h1><?= $model->title ?></h1>
 
 <div class="meta">
-    <p>Дата публикации: <?= $model->created_at ?> 
+    <p>Дата публикации: <?= date('Y-m-d H:i:s',$model->created_at) ?> 
     Категория: <?= Html::a($model->cat->name, ['category/view', 'id' => $model->cat->id]) ?>
     </p>
 </div>

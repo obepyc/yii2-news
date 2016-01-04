@@ -7,7 +7,10 @@ $this->title = 'Админ-панель';
 <div class="site-index">
 
     <div class="jumbotron">
-        <h1>Congratulations!</h1>
+        <h1><?php
+        $date = date('Y-m-d H:i:s',time());
+        echo $date;
+        ?></h1>
 
         <p class="lead">You have successfully created your Yii-powered application.</p>
 

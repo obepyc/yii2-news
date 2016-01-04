@@ -39,6 +39,7 @@ class PostController extends Controller
                     'delete' => ['post'],
                 ],
             ],
+
         ];
     }
 
@@ -66,6 +67,7 @@ class PostController extends Controller
     {
         return $this->render('view', [
             'model' => $this->findModel($id),
+            'category' => Category::find()->all(),
         ]);
     }
 
@@ -101,7 +103,7 @@ class PostController extends Controller
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
-
+        
         if ($model->load(Yii::$app->request->post())) {
             $model->updated_at = time();
             if($model->save()){
