@@ -56,4 +56,12 @@ tests                    contains various tests for the advanced application
 Установка
 ===============================
 
-Текст установки
+1. Скачать композер в папку с проектом php -r "readfile('https://getcomposer.org/installer');" | php
+
+2. Установить необходимые модули, выполнив команду php composer.phar install
+
+3. Ппроинициализировать проект, выполнив команду php init
+
+4. Произвести настройку подключения к дб, в файле common/config/main-local.php
+
+5. Создать таблицы при помощи команды php yii migrate
