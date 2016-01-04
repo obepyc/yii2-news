@@ -73,7 +73,7 @@ class Post extends \yii\db\ActiveRecord
 
     public function getPosts()
     {
-        return new ActiveDataProvider(['query' => Post::find()]);
+        return new ActiveDataProvider(['query' => Post::find()->orderBy("id DESC")]);
     }
 
     // Получение одной записи
